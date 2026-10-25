@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LocalBusiness Schema Generator</title>
+  <style>
+    body { margin: 0; padding: 32px 16px; background: #eef1f5; font-family: system-ui, sans-serif; }
+    main { max-width: 1180px; margin: 0 auto; }
+    h1 { margin: 0 0 6px; font-size: 28px; }
+    p.lead { margin: 0 0 24px; color: #5b6474; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>LocalBusiness Schema Generator</h1>
+    <p class="lead">Fill in the form and copy ready-to-paste LocalBusiness JSON-LD.</p>
+    <div id="tool"></div>
+  </main>
+  <script type="module">
+    import './src/style.css';
+    import { mountSchemaTool } from './src/index.js';
+    mountSchemaTool(document.getElementById('tool'));
+  </script>
+</body>
+</html>
